@@ -1,3 +1,8 @@
+/* --- Import Components stylesheets --- */
+@import url("component/banner.css");
+
+
+/* --- Define basic style for fonts & colors --- */
 body{
   background: -webkit-linear-gradient(to bottom, #3fada8, #808080);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #3fada8, #808080); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -34,35 +39,15 @@ li a i:hover {
 
 #img-circle {
   border-radius: 50%;
+  width: 250px;
 }
 
 
 .container {
-  width: 1000px;   /* This sets the width */
+  /* This sets the width */
   margin: 0 auto; /* This automatically sets left/right margins */
 }
 
-
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 900px;
-  }
-}
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 680px;
-  }
-}
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 520px;
-  }
-  h3, p {
-    display: none;
-}
 
 
 /*@media (max-width: 960px) {
@@ -117,6 +102,7 @@ li a i:hover {
 /*    display: none;
 /*  }
 /*}
+
 
 
 
